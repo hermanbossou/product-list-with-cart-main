@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <section class="main-container">
+    <main class="left-column">
+      <h1 class="main-title">Desserts</h1>
+      <div class="food-list-wrapper">
+        <div class="food-item food-item-1">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-waffle-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-waffle-tablet.webp" />
+              <img src="assets/images/image-waffle-mobile.webp" alt="waffle with berries">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" id="add-to-cart-button-default" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div id="add-to-cart-button-active"  class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Waffle</span>
+            <h2 class="product-title">Waffle with Berries</h2>
+            <span class="product-price">$6.50</span>
+          </div>
+        </div>
+        <div class="food-item food-item-2">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-creme-brulee-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-creme-brulee-tablet.webp" />
+              <img src="assets/images/image-creme-brulee-mobile.webp" alt="vanilla bean creme brulee">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Crème Brùlé<em></em></span>
+            <h2 class="product-title">Vanilla Bean Crème Brulée</h2>
+            <span class="product-price">$7.00</span>
+          </div>
+        </div>
+        <div class="food-item food-item-3">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-macaron-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-macaron-tablet.webp" />
+              <img src="assets/images/image-macaron-mobile.webp" alt="vanilla bean creme brulee">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Macaron<em></em></span>
+            <h2 class="product-title">Macaron Mix of Five</h2>
+            <span class="product-price">$8.00</span>
+          </div>
+        </div>
+        <div class="food-item food-item-4">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-tiramisu-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-tiramisu-tablet.webp" />
+              <img src="assets/images/image-tiramisu-mobile.webp" alt="classic tiramisu">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Tiramisu<em></em></span>
+            <h2 class="product-title">Classic Tiramisu</h2>
+            <span class="product-price">$5.50</span>
+          </div>
+        </div>
+        <div class="food-item food-item-5">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-baklava-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-baklava-tablet.webp" />
+              <img src="assets/images/image-baklava-mobile.webp" alt="pistachio baklava">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Baklava<em></em></span>
+            <h2 class="product-title">Pistachio Baklava</h2>
+            <span class="product-price">$4.00</span>
+          </div>
+        </div>
+        <div class="food-item food-item-6">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-meringue-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-meringue-tablet.webp" />
+              <img src="assets/images/image-meringue-mobile.webp" alt="lemon meringue pie">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Pie<em></em></span>
+            <h2 class="product-title">Lemon Meringue Pie</h2>
+            <span class="product-price">$5.00</span>
+          </div>
+        </div>
+        <div class="food-item food-item-7">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-cake-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-cake-tablet.webp" />
+              <img src="assets/images/image-cake-mobile.webp" alt="red velvet cake">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Cake<em></em></span>
+            <h2 class="product-title">Red Velvet Cake</h2>
+            <span class="product-price">$5.50</span>
+          </div>
+        </div>
+        <div class="food-item food-item-8">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-brownie-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-brownie-tablet.webp" />
+              <img src="assets/images/image-brownie-mobile.webp" alt="salted caramel brownie">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Brownie<em></em></span>
+            <h2 class="product-title">Salted Caramel Brownie</h2>
+            <span class="product-price">$4.50</span>
+          </div>
+        </div>
+        <div class="food-item food-item-9">
+          <div class="food-image-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/images/image-panna-cotta-desktop.webp" />
+              <source media="(min-width: 768px)" srcset="assets/images/image-panna-cotta-tablet.webp" />
+              <img src="assets/images/image-panna-cotta-mobile.webp" alt="vanilla panna cotta">
+            </picture>
+            <div class="add-to-cart-button-wrapper">
+              <a href="#" class="add-to-cart-button add-to-cart-button-default">
+                <svg class="add-to-cart-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#c73b0f" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m8.751 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                <span>Add to Cart</span>
+              </a>
+              <div class="add-to-cart-button add-to-cart-button-active">
+                <img src="assets/images/icon-decrement-quantity.svg" alt="decrement icon" class="decrement-icon" />
+                <span class="product-quantity">1</span>
+                <img src="assets/images/icon-increment-quantity.svg" alt="increment icon" class="increment-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="food-content-wrapper">
+            <span class="product-category">Panna Cotta<em></em></span>
+            <h2 class="product-title">Vanilla Panna Cotta</h2>
+            <span class="product-price">$6.50</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="right-column">
+      <div class="cart-notice cart-notice-empty">
+        <h2 class="cart-notice-title">Your Cart (<span class="total-product-in-cart">0</span>)</h2>
+        <div class="cart-notice-empty-content">
+          <img src="assets/images/illustration-empty-cart.svg" alt="empty cart placeholder" />
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="cart-notice-products-wrapper">
+          <ul id="cart-products-list" class="cart-products-list">
+            <li class="cart-product-item-wrapper">
+              <div class="cart-product-item-content">
+                <span class="card-product-name">Classic Tiramisu</span>
+                <div class="cart-product-info">
+                  <span class="cart-product-number-wrapper"><span class="cart-product-number">1</span>x</span>
+                  <span class="cart-product-single-price-wrapper">@$<span class="cart-product-single-price">5.50</span></span>
+                  <span class="cart-product-total-price-wrapper">$<span class="cart-product-total-price">5.50</span></span>
+                </div>
+              </div>
+              <svg class="cart-product-remove-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 10 10"><path fill="#caafa7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375z"/></svg>
+            </li>
+            <li class="cart-product-item-wrapper">
+              <div class="cart-product-item-content">
+                <span class="card-product-name">Vanilla Bean Crème Brûlée</span>
+                <div class="cart-product-info">
+                  <span class="cart-product-number-wrapper"><span class="cart-product-number">4</span>x</span>
+                  <span class="cart-product-single-price-wrapper">@$<span class="cart-product-single-price">7.00</span></span>
+                  <span class="cart-product-total-price-wrapper">$<span class="cart-product-total-price">28.00</span></span>
+                </div>
+              </div>
+              <svg class="cart-product-remove-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 10 10"><path fill="#caafa7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375z"/></svg>
+            </li>
+            <li class="cart-product-item-wrapper">
+              <div class="cart-product-item-content">
+                <span class="card-product-name">Vanilla Panna Cotta</span>
+                <div class="cart-product-info">
+                  <span class="cart-product-number-wrapper"><span class="cart-product-number">2</span>x</span>
+                  <span class="cart-product-single-price-wrapper">@$<span class="cart-product-single-price">6.50</span></span>
+                  <span class="cart-product-total-price-wrapper">$<span class="cart-product-total-price">13.00</span></span>
+                </div>
+              </div>
+              <svg class="cart-product-remove-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 10 10"><path fill="#caafa7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375z"/></svg>
+            </li>
+          </ul>
+          <div class="order-total-wrapper">
+            <span class="order-total-text">Order Total</span>
+            <span class="order-total-price-wrapper">$<span class="order-total-price">46.50</span></span>
+          </div>
+          <div class="carbon-neutral-badge">
+            <img src="assets/images/icon-carbon-neutral.svg" alt="carbon neutral icon" id="carbon-neutral-icon">
+            <span>This is a <strong>carbon-neutral</strong> delivery</span>
+          </div>
+          <div class="order-button-wrapper">
+            <a href="#" id="order-confirm-button">Confirm Order</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Hi my name is</a>.
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>                     
