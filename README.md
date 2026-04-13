@@ -1,7 +1,7 @@
 # Frontend Mentor - Product list with cart solution
 
 This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). 
-Frontend Mentor challenges help to improve coding skills by building realistic projects. 
+This project focuses on building a functional, responsive, and interactive dessert ordering interface. 
 
 
 ## Table of contents
@@ -34,12 +34,12 @@ Users should be able to:
 
 ### Screenshot
 
-[!Screenshot](screenshot.webp)
+[Screenshot](screenshot.webp)
 
 
 ### Links
 
-- Page URL: [[https://hermanbossou.github.io/product-list-with-cart-main/]([https://hermanbossou.github.io/product-list-with-cart-main/])
+- Page URL: [https://hermanbossou.github.io/product-list-with-cart-main]([https://hermanbossou.github.io/product-list-with-cart-main/])
 
 
 ## My process
@@ -55,7 +55,7 @@ Users should be able to:
 
 During this project, I focused on:
 
-	1. Responsive Image Handling: Implementing the <picture> element to serve the most 			appropriate asset based on the user's viewport, improving performance.
+	1. Responsive Image Handling: Implementing the picture element to serve the most 			appropriate asset based on the user's viewport, improving performance.
 
 2. UI State Management: Managing the transition between the "Add to Cart" button and the "Quantity Selector" using sibling elements and utility classes like .hidden.
 
